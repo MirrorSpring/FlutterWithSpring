@@ -33,7 +33,7 @@ public class ADaoServiceImpl implements ADaoService {
 	    }
 	    
 	    jsonList.put("results",itemList);
-	    model.addAttribute("ITEM",jsonList.toJSONString());
+	    model.addAttribute("ITEM",jsonList.toJSONString()); //JSON을 String으로 전달
 	}
 
 }
